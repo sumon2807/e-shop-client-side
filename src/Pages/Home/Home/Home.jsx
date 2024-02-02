@@ -1,13 +1,16 @@
 import React from 'react';
-import LeftNav from '../../Shared/LeftNav';
-import Banner from '../../Banner/Banner';
+import LeftNav from '../../../../src/Component/LeftNavbar/LeftNav';
+import Banner from '../../../../src/Component/Banner/Banner';
+import Container from '../../Shared/Container/Container';
 
 const Home = () => {
     return (
-        <div className="grid grid-cols-5 gap-4">
-            <div className=" bg-red-500" ><LeftNav></LeftNav></div>
-            <div className=" col-span-4 "><Banner></Banner></div>
-        </div>
+        <Container>
+            <div className="grid grid-cols-5 gap-4">
+                <div className=" bg-red-500" ><LeftNav></LeftNav></div>
+                <div className=" col-span-4 "><Banner></Banner></div>
+            </div>
+        </Container>
     );
 };
 

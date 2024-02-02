@@ -1,8 +1,8 @@
 import React from 'react';
-
+import Container from '../Shared/Container/Container'
 const Footer = () => {
     return (
-        <>
+        <Container>
             <footer className="footer p-10 bg-base-200 text-base-content">
                 <nav>
                     <header className="footer-title">Services</header>
@@ -42,8 +42,7 @@ const Footer = () => {
                     <p>Copyright © 2023 - All right reserved by eShop online Shopping</p>
                 </aside>
             </div>
-        </>
-
+        </Container>
     );
 };
 
